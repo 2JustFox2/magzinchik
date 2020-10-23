@@ -1,9 +1,40 @@
 body {
-    background-color: coral;
+    background-color: rgb(243, 243, 243);
+    max-width: 100%;
 }
-.krut {
-    background-color: blue;
+
+
+
+.header {
+    height: 4.5rem;
+    width: auto;
+    background-color: rgb(77, 77, 77);
+    border-radius: 10px;
+    transition: 0.3s;
 }
-h2 {
-    width: 100px;
+.pod {
+    height: 4.2rem;
+    margin: auto;
+    width: 97.2%;
+    background-color: rgb(146, 146, 146);
+    transition: 0.3s;
+}
+
+.d1 {
+    border-radius: 0px;
+    height: 11px;
+    transition: 0.3s;
+}
+.header:hover .d1 {
+    transition: 0.3s;
+    height: 300px;
+    border-radius: 10px;
+}
+.header:hover .d2 {
+    transition: 0.3s;
+    height: 285px;
+    width: 98%;
+    margin: auto;
+    background-color: rgb(201, 201, 201);
+    border-radius: 10px;
 }
