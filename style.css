@@ -1,6 +1,6 @@
 body {
-    background-color: rgb(130, 133, 133);
-    max-width: 100%;
+    background-color: rgb(29, 29, 29);
+    max-height: 100vh;
 }
 
 * {
@@ -38,18 +38,6 @@ body {
     background-size: cover;
     background-attachment: fixed;
 }
-.conteiner .selection:nth-child(4)
-{
-    background: url(img/bg4.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-}
-.conteiner .selection:nth-child(5)
-{
-    background: url(img/bg5.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-}
 .magaz {
     position: relative;
     display: flex;
@@ -77,7 +65,7 @@ body {
     color: #fff;
     width: 100%;
     transform-style:preserve-3d;
-    transform: translate3d(0,0,75px);
+    transform: translate3d(0,0,150px);
     transition: 0.5s;
     opacity: 0;
     z-index: 10;
@@ -119,7 +107,31 @@ body {
 }
 .magaz .box:nth-child(2) .buy{
     background: darkslateblue;
+
 }
 .magaz .box:nth-child(3) .buy{
     background: darkorchid;
+
+}
+
+.text_g1{
+    transform: translate3d(0%,398%,30px);
+    width: 300px;
+    transform-style:preserve-3d;
+}
+.text_g2{
+    transform: translate3d(0%,298%,40px);
+    width: 300px;
+    transform-style:preserve-3d;
+}
+.text_g3{
+    transform: translate3d(0%,170%,50px);
+    width: 300px;
+    transform-style:preserve-3d;
+}
+.osn {
+    width: 80%;
+    height: 1900px;
+    background: rgb(35, 35, 35);
+    margin: auto;
 }
