@@ -1,40 +1,74 @@
 body {
-    background-color: rgb(243, 243, 243);
+    background-color: rgb(130, 133, 133);
     max-width: 100%;
 }
 
-
-
 .header {
-    height: 4.5rem;
-    width: auto;
-    background-color: rgb(77, 77, 77);
-    border-radius: 10px;
-    transition: 0.3s;
-}
-.pod {
-    height: 4.2rem;
+    height: 6rem;
+    width: 92%;
     margin: auto;
-    width: 97.2%;
-    background-color: rgb(146, 146, 146);
+    background: linear-gradient(304deg, rgba(1,49,71,1) 0%, rgba(48,0,94,1) 100%);
     transition: 0.3s;
+    position: relative
+}
+.box {
+    height: 4.5rem;
+    background-color: rgba(20, 20, 20, 0.49);
+    width: 96%;
+    margin: auto;
+    top: 50%;
+    position: absolute;
+    transform: translate(2%, -50%);
+    transition: 0.9s;
+}
+.header:hover .box {
+    transition: 0.5s;
+    background-color: rgba(90, 90, 90, 0.3);
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.conteiner{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow:auto;
 }
 
-.d1 {
-    border-radius: 0px;
-    height: 11px;
-    transition: 0.3s;
+.conteiner .selection {
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
-.header:hover .d1 {
-    transition: 0.3s;
-    height: 300px;
-    border-radius: 10px;
+.conteiner .selection:nth-child(1)
+{
+    background: url(img/bg1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }
-.header:hover .d2 {
-    transition: 0.3s;
-    height: 285px;
-    width: 98%;
-    margin: auto;
-    background-color: rgb(201, 201, 201);
-    border-radius: 10px;
+.conteiner .selection:nth-child(2)
+{
+    background: url(img/bg2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.conteiner .selection:nth-child(3)
+{
+    background: url(img/bg3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.conteiner .selection:nth-child(4)
+{
+    background: url(img/bg4.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.conteiner .selection:nth-child(5)
+{
+    background: url(img/bg5.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }
