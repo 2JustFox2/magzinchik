@@ -2,53 +2,56 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <title> Xitile </title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
-<!-- header -->
-<div class="header_pod">
-    <div class="header">
-        <div class="box">
-            <div class="pod1"></div>
-        </div>
-    </div>
-    <img src="" alt="">
-</div>
-<div class=""></div>
-<!-- header_end -->
-<!-- osn -->
-<div class="conteiner">
+    <!-- osn2 -->
+<div class="conteiner"> 
     <div class="selection">
         <div class="content">
-            <h2>Selection One Title</h2>
+            <h2>Xitile</h2>
             <p>
-                dfhguiodhgodiiosuiohdiohoujiosdoighoihdfoihgioh'odfdfiofhgoijhfoijipohfgiojoifjhjfogijhiof
+                Создание сайтов
             </p>
         </div>
     </div>
     <div class="selection">
         <div class="content">
-            <h2>Selection Two Title</h2>
+            <h2>Как мы работаем?</h2>
             <p>
-                dfhguiodhgodiiosuiohdiohoujiosdoighoihdfoihgioh'odfdfiofhgoijhfoijipohfgiojoifjhjfogijhiof
+                У нас идёт деление на несколько человек что улучшает качество и скорость создания сайтов.
             </p>
         </div>
     </div>
     <div class="selection">
         <div class="content">
-            <h2>Selection Three Title</h2>
+            <h2>Почему имннео мы?</h2>
             <p>
-                dfhguiodhgodiiosuiohdiohoujiosdoighoihdfoihgioh'odfdfiofhgoijhfoijipohfgiojoifjhjfogijhiof
+                У нас низкие цены на создание вашего сайта. Мы опытная комманда которая занимается этим уже больше года. 
             </p>
         </div>
     </div>
     <div class="selection">
         <div class="content">
-            <h2>Selection Four Title</h2>
-            <p>
-                dfhguiodhgodiiosuiohdiohoujiosdoighoihdfoihgioh'odfdfiofhgoijhfoijipohfgiojoifjhjfogijhiof
-            </p>
+            <div class="magaz">
+                <div class="box">
+                    <h2 class="name">Низкий уровень сайта</h2>
+                    <a href="#" class="buy">Buy now</a>
+                    <img src="img/5Ресурс 1.png" class="product">
+                </div>
+                <div class="box">
+                    <h2 class="name">Средний уровень сайта</h2>
+                    <a href="#" class="buy">Buy now</a>
+                    <img src="img/6Ресурс 2.png" class="product">
+                </div>
+                <div class="box">
+                    <h2 class="name">Профисиональный уровень сайта</h2>
+                    <a href="#" class="buy">Buy now</a>
+                    <img src="img/7Ресурс 3.png" class="product">
+                </div>
+            </div>
         </div>
     </div>
     <div class="selection">
@@ -60,88 +63,14 @@
         </div>
     </div>
 </div>
-
-<!--osn2-->
-<div>
-
-</div>
-<!--osn2-->
-<div>
-    <div class=""><img src="" alt=""></div>
-    <div class="">
-        <p>
-
-
-            
-        </p>
-        <p>
-
-
-
-        </p>
-        <p>
-
-
-
-        </p>
-        <p>
-
-
-
-        </p>
-        <p>
-
-
-
-        </p>
-        <p>
-
-
-
-        </p>
-        <p>
-
-
-        </p>
-        <p>
-
-        </p>
-    </div>
 </div>
 <!--osn_end-->
-
-<!--magaz-->
-<div>
-    <div>
-        <div></div>
-        <div></div>
-    </div>
-    <div>
-        <div></div>
-        <div></div>
-    </div>
-    <div>
-        <div></div>
-        <div></div>
-    </div>
-</div>
-<!--magaz_end-->
-<!--soc-->
-    <div>
-        <div>
-
-        </div>
-
-
-        <div>
-
-        </div>
-
-
-        <div>
-
-        </div>
-    </div>
-<!--soc_end-->
+<script src="libs/vanilla-tilt.min.js"></script>
+<script>
+    VanillaTilt.init(document.querySelectorAll(".box"), {
+		max: 25,
+		speed: 400
+    });
+</script>
 </body>
 </html>

@@ -3,28 +3,6 @@ body {
     max-width: 100%;
 }
 
-.header {
-    height: 6rem;
-    width: 92%;
-    margin: auto;
-    background: linear-gradient(304deg, rgba(1,49,71,1) 0%, rgba(48,0,94,1) 100%);
-    transition: 0.3s;
-    position: relative
-}
-.box {
-    height: 4.5rem;
-    background-color: rgba(20, 20, 20, 0.49);
-    width: 96%;
-    margin: auto;
-    top: 50%;
-    position: absolute;
-    transform: translate(2%, -50%);
-    transition: 0.9s;
-}
-.header:hover .box {
-    transition: 0.5s;
-    background-color: rgba(90, 90, 90, 0.3);
-}
 * {
     margin: 0;
     padding: 0;
@@ -44,13 +22,13 @@ body {
 }
 .conteiner .selection:nth-child(1)
 {
-    background: url(img/bg1.jpg);
+    background: url(img/bg1.png);
     background-size: cover;
     background-attachment: fixed;
 }
 .conteiner .selection:nth-child(2)
 {
-    background: url(img/bg2.jpg);
+    background: url(img/bg2.png);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -71,4 +49,77 @@ body {
     background: url(img/bg5.jpg);
     background-size: cover;
     background-attachment: fixed;
+}
+.magaz {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1200px;
+    transform-style:preserve-3d;
+}
+.magaz .box
+{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 40px;
+    background: midnightblue;
+    border-radius: 20px;
+    transform-style:preserve-3d;
+}
+.magaz .box .name {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    transform-style:preserve-3d;
+    transform: translate3d(0,0,75px);
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+}
+.magaz .box:hover .name {
+    top: 40px;
+    opacity: 1;
+}
+.magaz .box .buy{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform-style:preserve-3d ;
+    transform: translate3d(-50%,0,75px);
+    color: #fff;
+    background: #333;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+}
+.magaz .box:hover .buy {
+    bottom: 30px;
+    opacity: 1;
+}
+.magaz .box .product {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 300px;
+    transition: 0.5s;
+    z-index: 11;
+    transform-style:preserve-3d;
+    transform: translate3d(-50%,-50%,50px) rotate(-15deg);
+}
+.magaz .box:nth-child(1) .buy{
+    background: aquamarine;
+}
+.magaz .box:nth-child(2) .buy{
+    background: darkslateblue;
+}
+.magaz .box:nth-child(3) .buy{
+    background: darkorchid;
 }
