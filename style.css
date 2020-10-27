@@ -32,12 +32,6 @@ body {
     background-size: cover;
     background-attachment: fixed;
 }
-.conteiner .selection:nth-child(3)
-{
-    background: url(img/bg3.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-}
 .magaz {
     position: relative;
     display: flex;
@@ -134,4 +128,9 @@ body {
     height: 1900px;
     background: rgb(35, 35, 35);
     margin: auto;
+}
+.osn_pod {
+    color: rgb(50, 50, 50);
+    height: 150px;
+    width: 100%;
 }
