@@ -46,3 +46,8 @@ body {
     height: 150px;
     width: 100%;
 }
+.buiton_dop {
+    width: 500px;
+    height: 250px;
+    background: blue;
+}
